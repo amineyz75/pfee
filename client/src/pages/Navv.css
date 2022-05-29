@@ -1,0 +1,586 @@
+ul.uu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #6495E3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: rgb(209, 205, 225);
+}
+
+
+
+
+.sidebar{
+width: 345px;
+position: fixed;
+left: 0;
+top: 0;
+height: 100%;
+  background: rgb(3,27,136);
+  background: linear-gradient(30deg, rgba(3,27,136,1) 39%, rgba(96,150,253,1) 90%);    /* z-index: 100% ; */
+}
+.sidebar_admin{
+width: 345px;
+position: fixed;
+left: 0;
+top: 0;
+height: 100%;
+  background: rgb(255,58,87);
+  background: linear-gradient(30deg, rgba(255,58,87,1) 45%, rgba(250,167,184,1) 69%, rgba(255,255,255,1) 100%)
+}
+.img{
+  width: 100px;
+  height: 100px;
+  margin-left: 35%;
+}
+
+
+.sidebar-brand{
+  height: 90px;
+  padding-left:1rem 0rem 1rem  2rem;
+  color: #fff;
+}
+
+.sidebar-brand span {
+  display: inline-block;
+
+}
+.sidebar-menu li {
+  width: 100%;
+  margin-bottom: 1.3rem;
+  padding-left: 1rem;
+}
+.sidebar-menu  .link {
+  display: block;
+  color: #fff;
+  font-size: 1.1rem;
+  padding-left: 1rem;
+
+}
+.sidebar-menu .link span:first-child{
+  font-size: 1.5rem;
+  padding-right: 1rem;
+}
+.sidebar-menu a.active{
+  background: #fff;
+  padding-top: 1rem ;
+  padding-bottom:1rem ;
+  color: rgb(3,27,136);    
+  border-radius: 30px 0px 0px 30px;
+}
+
+
+.sidebar-menu{
+  margin-top: 1rem;
+}
+
+.main-content{
+  margin-left: 345px;
+}
+.header h2 {
+  color: #222;
+}
+
+header label span {
+
+  font-size: 1.7rem;
+  padding-left: 1rem;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  /* position: fixed; */
+  left: 345px;
+  width: calc(100%-345px);
+  top:0;
+  z-index: 100;
+}
+.search-wrapper{
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+}
+.search-wrapper span {
+  display: inline-block;
+  padding: 0rem 1rem;
+  font-size: 1.2rem;
+}
+
+.search-wrapper input {
+  height: 100%;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+}
+
+.user-wrapper{
+  display: flex;
+  align-items: center;
+}
+
+.user-wrapper small {
+  display: inline-block;
+  color: #8390A2 ;
+}
+.logout{
+  position: absolute;
+  bottom: 0;
+  background: #fff;
+  padding-top: 1rem ;
+  padding-bottom:1rem ;
+  color: rgb(3,27,136);    
+  border-radius: 30px 0px 0px 30px;  
+  margin-left: 0;
+  width: 90%;
+
+}
+
+
+#btn {
+  color: rgb(3,27,136);
+  background-color: #fff;
+  border: none;
+
+  
+}
+main{
+  /* margin-top: 85px; */
+  padding: 2rem 1.5rem;
+  background: #f1f5f9;
+  min-height: calc(100vh - 90px);
+}
+
+.cards {
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  margin-top: 1rem;
+}
+.card-single{
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 2px;
+}
+.card-single div:last-child span {
+  font-size: 3rem;
+  color: rgba(96,150,253,1);
+
+
+
+}
+
+.card-single div:first-child span {
+  color : #8390A2 ;
+
+}
+
+.card-single:last-child {
+  background: rgba(96,150,253,1)   ;
+}
+
+.card-single:last-child h1,
+.card-single:last-child div:first-child span,
+.card-single:last-child div:last-child span {
+color:#fff;
+}
+.letter {
+  background-color: rgb(3,27,136);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+  color: #EEE5E5;
+  font-size: 35px;
+
+}
+
+small {
+  width: 100%;
+  text-align: center;
+}
+.recent-grid{
+  margin-top: 3.5rem;
+  display: grid;
+  grid-gap: 2rem ;
+  grid-template-columns: 65% auto;
+}
+
+.card{
+  background:#fff ;
+  border-radius: 5px;
+}
+
+.card-header
+{
+  padding: 1rem;
+
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0 ;
+
+}
+.card-header button {
+  background: #dd2f6e;
+  border-radius: 10px;
+  color:#fff ;
+  font-size: .8rem;
+  padding: .5rem 1rem;
+  border: 1px solid #dd2f6e;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+thead tr{
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 2px solid #f0f0f0;
+  
+}
+
+td {
+  padding: 0.5rem 0rem;
+  font-size: .9rem;
+  color: #222;
+
+}
+
+tr td:last-child {
+  display: flex;
+  align-items: center;
+
+}
+
+thead td {
+  font-weight: 700;
+  
+
+}
+
+td .status {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  margin-right: 1rem;
+  margin-top: 5px;
+
+}
+
+.status.red {
+  background: red;
+
+}
+
+
+.status.green {
+  background: green;
+
+}
+
+
+
+.table-responsive{
+  width: 100%;
+overflow-x: auto;
+}
+
+.customer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem .7rem;
+}
+.info{
+  display: flex;
+  align-items: center;
+}
+
+.info img {
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.info h4 {
+  font-size: .8rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.info small {
+  font-weight: 600;
+  color: #8390A2;
+
+}
+
+.contact {
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-left: .5rem;
+  color: #dd2f6e;
+}
+#nav-toggle:checked + .sidebar{
+width: 70px;
+}
+
+.etat_check{
+  display: flex;
+}
+#p{
+  color: black;
+}
+
+.la-user{
+  color: #dd2f6e;
+  font-size: 40px;
+  padding-right: 1rem;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************
+      Boilerplate Css
+******************************/
+
+* {
+box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+}
+
+html {
+height: 100%;
+}
+
+body {
+
+font: 12px/1.4 Arial;
+position: relative;
+}
+
+a {
+color: red;
+text-decoration: none;
+}
+
+ul {
+list-style: none;
+}
+
+
+/******************************
+  Navigation Menu
+******************************/
+
+.horizontal-menu {
+background-color: rgb(3,27,136);
+display: block;
+height: 50px;
+  width: 100%;
+}
+.logoo{
+height: 40px;
+}
+
+
+
+
+/******************************
+        Globals
+******************************/
+
+.horizontal-menu.plain,
+.horizontal-menu.dropdown {
+display: block;
+  
+}
+
+.horizontal-menu.plain li,
+.horizontal-menu.dropdown li {
+float: left;
+height: 100%;
+width: 10%;
+
+}
+
+.horizontal-menu.plain li a,
+.horizontal-menu.dropdown li > a {
+display: block;
+height: 100%;
+line-height: 50px;
+text-align: center;
+transition: background-position 0.2s ease 0s;
+}
+
+.horizontal-menu.plain li a,
+.horizontal-menu.dropdown li > div > a {
+transition: background-position 0.1s ease 0s;
+}
+
+/* .horizontal-menu.plain li:not(.active):hover a,
+.horizontal-menu.dropdown li > div > a:hover {
+background-color: rgb(3,27,136);
+background-position: 100% 0;
+}
+
+.horizontal-menu.plain li.active a:active,
+.horizontal-menu.dropdown > div:not(.active):hover > a:active {
+background-color: rgb(3,27,136);
+} */
+
+
+/******************************
+  Plain Horizontal Menu
+******************************/
+
+.horizontal-menu.plain li a {
+background-color: rgb(3,27,136);
+}
+
+.horizontal-menu.plain li.active a {
+color: #FFF;
+}
+
+
+/******************************
+Horizontal Menu With Dropdowns
+******************************/
+
+.horizontal-menu.dropdown li,
+.horizontal-menu.dropdown li > a {
+transition: background-color 0.2s ease;
+  
+}
+
+.horizontal-menu.dropdown li {
+position: relative;
+}
+
+.horizontal-menu.dropdown li > a {
+text-transform: uppercase;
+}
+
+.horizontal-menu.dropdown li > div {
+background: #fff;
+display: none;
+min-width: 200%;
+overflow: hidden;
+position: absolute;
+padding: 10px;
+z-index: 999;
+}
+.txt{
+color: white;
+}
+
+.horizontal-menu.dropdown li:not(:first-of-type):not(:last-of-type) > div {
+left: -50%;
+border-radius: 0 0 3px 3px;
+}
+
+.horizontal-menu.dropdown li:first-of-type > div {
+left: 0;
+border-radius: 0 0 3px 0;
+}
+
+.horizontal-menu.dropdown li:last-of-type > div {
+right: 0;
+border-radius: 0 0 0 3px;
+}
+
+/* .horizontal-menu.dropdown li:hover > div {
+display: block;
+}
+
+
+
+.horizontal-menu.dropdown li > div > a:hover {
+background-position: 100% 0;
+cursor: pointer;
+} */
+.horizontal-menu.dropdown li:nth-child(7) {
+margin-left: 600px;
+width: 50px;
+
+}
+.logout_btn{
+border: none;
+outline: none;
+padding: 10px 0;
+margin-top: 3px;
+background-color: white;
+border-radius: 20px;
+width: 50px;
+font-weight: bold;
+font-size: 14px;
+cursor: pointer;
+
+}
+
+.notif{
+color: white;
+background-color: rgb(3,27,136);;
+height: 25px;	
+width: 25px;
+text-align: center;
+border-radius: 50%;
+
+}
+
+
+
+
+
+
